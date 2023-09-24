@@ -1,9 +1,9 @@
 :root {
   --color-primary: hsl(150, 100%, 66%);
   --color-text: hsl(193, 38%, 86%);
-  --color-card-background: hsl(217, 19%, 38%);
+  --color-neutral: hsl(217, 19%, 38%);
   --color-background: hsl(218, 23%, 16%);
-  --color-neutral: hsl(217, 19%, 24%);
+  --color-card-background: hsl(217, 19%, 24%);
 }
 
 *,
@@ -16,4 +16,79 @@
 
 body {
   font-family: "Manrope", sans-serif;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.advice {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--color-card-background);
+  border-radius: 9px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.advice__title {
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.advice__description {
+  line-height: 1.5;
+  color: var(--color-text);
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.dividor {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.advice__button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: var(--color-primary);
+}
+
+.advice__dice {
+  transition: 0.3s;
+}
+
+.advice__button:hover .advice__dice {
+  transform: rotate(180deg);
+}
+
+@media (max-width: 31.25rem) {
+  .advice__description {
+    font-size: 1.5rem;
+  }
 }
