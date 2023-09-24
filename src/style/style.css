@@ -1,3 +1,19 @@
+:root {
+  --color-primary: hsl(150, 100%, 66%);
+  --color-text: hsl(193, 38%, 86%);
+  --color-card-background: hsl(217, 19%, 38%);
+  --color-background: hsl(218, 23%, 16%);
+  --color-neutral: hsl(217, 19%, 24%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: red;
+  font-family: "Manrope", sans-serif;
 }
