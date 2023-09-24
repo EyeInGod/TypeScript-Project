@@ -15,7 +15,7 @@
   <body>
     <div id="app">
       <div class="wrapper">
-        <main class="advice loading">
+        <main class="advice loading" data-advice>
           <div class="lds-dual-ring"></div>
           <div class="advice__content">
             <p class="advice__title">
@@ -28,7 +28,7 @@
             <picture>
               <source
                 srcset="./src/images/pattern-divider-mobile.svg"
-                media="(max-width:678px)"
+                media="(max-width:42rem)"
               />
               <img
                 src="./src/images/pattern-divider-desktop.svg"
@@ -37,7 +37,11 @@
               />
             </picture>
           </div>
-          <button class="advice__button" aria-label="Roll a new advice">
+          <button
+            class="advice__button"
+            aria-label="Roll a new advice"
+            data-roll
+          >
             <img src="./src/images/icon-dice.svg" alt="" class="advice__dice" />
           </button>
         </main>
