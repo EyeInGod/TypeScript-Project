@@ -87,8 +87,48 @@ body {
   transform: rotate(180deg);
 }
 
+.lds-dual-ring {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 9rem;
+  height: 9rem;
+  margin: 3rem;
+  border-radius: 50%;
+  border: 6px solid var(--color-text);
+  border-color: var(--color-text) transparent var(--color-text) transparent;
+  animation: rotate 1.2s linear infinite;
+}
+
+/* Loading state */
+
+.loading .advice__dice {
+  animation: rotate 1s ease-in-out infinite;
+}
+
+.loading .advice__content {
+  display: none;
+}
+
+.loading .lds-dual-ring {
+  display: flex;
+}
+
 @media (max-width: 31.25rem) {
   .advice__description {
     font-size: 1.5rem;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

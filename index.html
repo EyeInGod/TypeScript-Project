@@ -15,25 +15,28 @@
   <body>
     <div id="app">
       <div class="wrapper">
-        <main class="advice">
-          <p class="advice__title">
-            Advice #<span class="advice__id">117</span>
-          </p>
-          <p class="advice__description">
-            "It is easy to sit up and take notice, what's difficult is getting
-            up and taking action."
-          </p>
-          <picture>
-            <source
-              srcset="./src/images/pattern-divider-mobile.svg"
-              media="(max-width:678px)"
-            />
-            <img
-              src="./src/images/pattern-divider-desktop.svg"
-              alt=""
-              class="dividor"
-            />
-          </picture>
+        <main class="advice loading">
+          <div class="lds-dual-ring"></div>
+          <div class="advice__content">
+            <p class="advice__title">
+              Advice #<span class="advice__id">117</span>
+            </p>
+            <p class="advice__description">
+              "It is easy to sit up and take notice, what's difficult is getting
+              up and taking action."
+            </p>
+            <picture>
+              <source
+                srcset="./src/images/pattern-divider-mobile.svg"
+                media="(max-width:678px)"
+              />
+              <img
+                src="./src/images/pattern-divider-desktop.svg"
+                alt=""
+                class="dividor"
+              />
+            </picture>
+          </div>
           <button class="advice__button" aria-label="Roll a new advice">
             <img src="./src/images/icon-dice.svg" alt="" class="advice__dice" />
           </button>
