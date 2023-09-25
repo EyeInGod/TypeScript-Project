@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
   <body>
     <div id="app">
@@ -19,12 +24,9 @@
           <div class="lds-dual-ring"></div>
           <div class="advice__content">
             <p class="advice__title">
-              Advice #<span class="advice__id">117</span>
+              Advice #<span class="advice__id" data-id>&nbsp;</span>
             </p>
-            <p class="advice__description">
-              "It is easy to sit up and take notice, what's difficult is getting
-              up and taking action."
-            </p>
+            <p class="advice__description" data-description>&nbsp;</p>
             <picture>
               <source
                 srcset="./src/images/pattern-divider-mobile.svg"
@@ -47,6 +49,10 @@
         </main>
       </div>
     </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
