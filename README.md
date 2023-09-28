@@ -74,7 +74,7 @@ Follow the example
 
 ## Contact
 
-Project Link: [https://github.com/Naskri/AdviceGenerator](https://github.com/denis0612/AdviceGenerator)
+Project Link: [https://github.com/denis0612/AdviceGenerator](https://github.com/denis0612/AdviceGenerator)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
