@@ -56,7 +56,7 @@ Follow the example
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/Naskri/AdviceGenerator.git
+   git clone https://github.com/denis0612/AdviceGenerator.git
    ```
 2. Install dependencies
 
